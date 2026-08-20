@@ -1,0 +1,26 @@
+{
+  "name": "rex-cursor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "One-page site introducing Rex, Cursor's upcoming AI dog.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "favicon": "node scripts/make-favicon.mjs"
+  },
+  "dependencies": {
+    "next": "^16.3.1",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.11",
+    "@types/node": "24.2.0",
+    "@types/react": "19.1.9",
+    "@types/react-dom": "19.1.7",
+    "sharp": "^0.35.3",
+    "tailwindcss": "4.1.11",
+    "typescript": "5.9.2"
+  }
+}
