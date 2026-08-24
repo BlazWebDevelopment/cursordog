@@ -1,4 +1,5 @@
 import Image from "next/image";
+import novaImage from "@/assets/nova.png";
 import AnimatedHeadline from "@/components/AnimatedHeadline";
 import Countdown from "@/components/Countdown";
 import Header from "@/components/Header";
@@ -10,12 +11,12 @@ const CAPABILITIES = [
   {
     index: "01",
     title: "Interacts",
-    body: "Rex is envisioned to sense and respond to the world around him, rather than waiting behind a screen for a prompt.",
+    body: "Nova is envisioned to sense and respond to the world around him, rather than waiting behind a screen for a prompt.",
   },
   {
     index: "02",
     title: "Learns",
-    body: "Experience is the input. Rex is designed to pick up new behaviours from the situations and people he encounters.",
+    body: "Experience is the input. Nova is designed to pick up new behaviours from the situations and people he encounters.",
   },
   {
     index: "03",
@@ -25,7 +26,7 @@ const CAPABILITIES = [
 ];
 
 const SPECS = [
-  { label: "Name", value: "Rex" },
+  { label: "Name", value: "Nova" },
   { label: "Category", value: "AI companion" },
   { label: "Built with", value: "Cursor" },
   { label: "Arriving", value: "October 2026" },
@@ -63,7 +64,7 @@ export default function Page() {
               </div>
 
               <h1 className="mt-7 text-[16vw] leading-[0.84] font-light tracking-[-0.055em] sm:text-[8.5rem] lg:text-[10.5rem]">
-                <AnimatedHeadline text="Rex" delay={220} stagger={90} />
+                <AnimatedHeadline text="Nova" delay={220} stagger={90} />
               </h1>
 
               <p
@@ -93,10 +94,10 @@ export default function Page() {
             >
               <div className="animate-float mx-auto max-w-3xl">
                 <Image
-                  src="/rex.png"
-                  alt="Rex, Cursor's upcoming AI dog — a white quadruped robot with REX printed on its body"
-                  width={1024}
-                  height={684}
+                  src={novaImage}
+                  alt="Nova, Cursor's upcoming AI dog — a white quadruped robot with NOVA printed on its body"
+                  width={847}
+                  height={845}
                   priority
                   sizes="(max-width: 768px) 100vw, 768px"
                   className="h-auto w-full select-none"
@@ -126,24 +127,24 @@ export default function Page() {
 
         <Marquee />
 
-        {/* Meet Rex ---------------------------------------------------- */}
+        {/* Meet Nova ---------------------------------------------------- */}
         <section id="meet" className="px-6 py-24 sm:py-32">
           <div className="mx-auto max-w-6xl">
             <Reveal>
               <span className="text-[12px] uppercase tracking-[0.2em] text-muted">
-                Meet Rex
+                Meet Nova
               </span>
               <h2 className="mt-5 max-w-3xl text-4xl font-light leading-[1.1] tracking-[-0.03em] sm:text-5xl">
                 More than an ordinary robotic dog.
               </h2>
               <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-muted">
-                The idea behind Rex is an AI companion that feels alive, responsive, and
+                The idea behind Nova is an AI companion that feels alive, responsive, and
                 capable of evolving alongside its owner. With artificial intelligence at the
-                center of his design, Rex could communicate, recognise situations, respond to
+                center of his design, Nova could communicate, recognise situations, respond to
                 people, and learn new behaviours.
               </p>
               <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-muted">
-                His name is simple: Rex. The technology behind him is anything but.
+                His name is simple: Nova. The technology behind him is anything but.
               </p>
             </Reveal>
 
@@ -190,7 +191,7 @@ export default function Page() {
                   world.
                 </p>
                 <p className="mt-6 text-lg font-light leading-relaxed text-muted">
-                  If Rex delivers on that vision, he could become an important step toward that
+                  If Nova delivers on that vision, he could become an important step toward that
                   future.
                 </p>
 
@@ -217,7 +218,7 @@ export default function Page() {
                 A new era for AI companions
               </span>
               <p className="mt-8 text-3xl font-light leading-[1.25] tracking-[-0.025em] text-balance sm:text-4xl">
-                Rex could show how artificial intelligence moves beyond screens and becomes
+                Nova could show how artificial intelligence moves beyond screens and becomes
                 something people can physically experience.
               </p>
               <p className="mt-8 text-lg font-light leading-relaxed text-muted">
@@ -239,7 +240,7 @@ export default function Page() {
                 October 2026
               </h2>
               <p className="mt-6 max-w-lg text-lg font-light leading-relaxed text-balance text-muted">
-                Rex is coming. October 2026 could be the beginning of something new.
+                Nova is coming. October 2026 could be the beginning of something new.
               </p>
             </Reveal>
 
@@ -258,7 +259,7 @@ export default function Page() {
                 href="#meet"
                 className="rounded-full border border-line px-6 py-3 text-[14px] font-medium transition-colors duration-300 hover:border-ink"
               >
-                Learn about Rex
+                Learn about Nova
               </a>
             </Reveal>
           </div>
@@ -268,7 +269,7 @@ export default function Page() {
         <section className="px-6 pb-20">
           <Reveal className="mx-auto max-w-3xl rounded-2xl border border-line px-6 py-6 sm:px-8">
             <p className="text-[13.5px] leading-relaxed text-muted">
-              <span className="text-ink">Official:</span> Rex is an official Cursor product.
+              <span className="text-ink">Official:</span> Nova is an official Cursor product.
               Full details on features, pricing, and availability will be announced through
               Cursor&rsquo;s official channels ahead of the October 2026 release.
             </p>
@@ -286,10 +287,10 @@ export default function Page() {
               height={64}
               className="h-6 w-6 rounded-md object-cover"
             />
-            <span className="text-[14px] text-muted">Cursor &middot; Rex</span>
+            <span className="text-[14px] text-muted">Cursor &middot; Nova</span>
           </div>
           <p className="text-[13px] text-muted">
-            &copy; {new Date().getFullYear()} Cursor &middot; Official Rex product page.
+            &copy; {new Date().getFullYear()} Cursor &middot; Official Nova product page.
           </p>
         </div>
       </footer>

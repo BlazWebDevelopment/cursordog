@@ -163,7 +163,7 @@ body {
 }
 
 /*
- * Soft grid behind the hero copy. It has to fade out well above the Rex photo:
+ * Soft grid behind the hero copy. It has to fade out well above the Nova photo:
  * the photo is opaque, so any texture still visible behind it would be clipped
  * into a hard rectangle.
  */

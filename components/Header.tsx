@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const NAV = [
   { label: "Overview", href: "#overview" },
-  { label: "Meet Rex", href: "#meet" },
+  { label: "Meet Nova", href: "#meet" },
   { label: "Vision", href: "#vision" },
   { label: "Launch", href: "#launch" },
 ];
@@ -41,7 +41,7 @@ export default function Header() {
           <span className="text-[15px] font-medium tracking-tight">Cursor</span>
           <span className="hidden text-[15px] text-muted sm:inline">/</span>
           <span className="hidden text-[15px] text-muted transition-colors group-hover:text-ink sm:inline">
-            Rex
+            Nova
           </span>
         </a>
 
