@@ -1,5 +1,5 @@
 import Image from "next/image";
-import novaImage from "@/assets/nova.png";
+import sebxImage from "@/assets/sebx.jpg";
 import AnimatedHeadline from "@/components/AnimatedHeadline";
 import Countdown from "@/components/Countdown";
 import Header from "@/components/Header";
@@ -7,16 +7,36 @@ import Marquee from "@/components/Marquee";
 import Reveal from "@/components/Reveal";
 import RotatingWord from "@/components/RotatingWord";
 
+const PARTNERS = ["SpaceX", "Cursor", "Neuralink"];
+
+const COLLABORATION = [
+  {
+    partner: "SpaceX",
+    role: "The body",
+    body: "Aerospace-grade materials and flight-proven engineering. SebX is built with the same precision that goes into a rocket, so he is light, strong, and made to move.",
+  },
+  {
+    partner: "Cursor",
+    role: "The mind",
+    body: "The AI at the core of SebX. Cursor brings the intelligence that lets him understand situations, respond to people, and keep learning every day.",
+  },
+  {
+    partner: "Neuralink",
+    role: "The connection",
+    body: "A neural interface that links SebX to his owner. The Neuro Dog is designed to sense intent and react to you in a way no companion has before.",
+  },
+];
+
 const CAPABILITIES = [
   {
     index: "01",
     title: "Interacts",
-    body: "Nova is envisioned to sense and respond to the world around him, rather than waiting behind a screen for a prompt.",
+    body: "SebX is envisioned to sense and respond to the world around him, rather than waiting behind a screen for a prompt.",
   },
   {
     index: "02",
     title: "Learns",
-    body: "Experience is the input. Nova is designed to pick up new behaviours from the situations and people he encounters.",
+    body: "Experience is the input. SebX is designed to pick up new behaviours from the situations and people he encounters.",
   },
   {
     index: "03",
@@ -26,11 +46,28 @@ const CAPABILITIES = [
 ];
 
 const SPECS = [
-  { label: "Name", value: "Nova" },
-  { label: "Category", value: "AI companion" },
-  { label: "Built with", value: "Cursor" },
+  { label: "Name", value: "SebX" },
+  { label: "Category", value: "Neuro Dog" },
+  { label: "Built by", value: "SpaceX × Cursor × Neuralink" },
   { label: "Arriving", value: "October 2026" },
 ];
+
+function PartnerLockup({ className = "" }: { className?: string }) {
+  return (
+    <span className={`inline-flex items-center gap-3 ${className}`}>
+      {PARTNERS.map((partner, index) => (
+        <span key={partner} className="inline-flex items-center gap-3">
+          {index > 0 && (
+            <span className="font-light text-muted" aria-hidden="true">
+              &times;
+            </span>
+          )}
+          <span>{partner}</span>
+        </span>
+      ))}
+    </span>
+  );
+}
 
 export default function Page() {
   return (
@@ -58,21 +95,26 @@ export default function Page() {
                   <span className="animate-pulse-ring absolute inline-flex h-full w-full rounded-full bg-ink" />
                   <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-ink" />
                 </span>
-                <span className="text-[12px] uppercase tracking-[0.18em] text-muted">
-                  Coming October 2026
-                </span>
+                <PartnerLockup className="text-[12px] uppercase tracking-[0.18em] text-ink" />
               </div>
 
-              <h1 className="mt-7 text-[16vw] leading-[0.84] font-light tracking-[-0.055em] sm:text-[8.5rem] lg:text-[10.5rem]">
-                <AnimatedHeadline text="Nova" delay={220} stagger={90} />
+              <span
+                className="animate-rise mt-6 text-[13px] uppercase tracking-[0.32em] text-muted"
+                style={{ animationDelay: "160ms" }}
+              >
+                Neuro Dog
+              </span>
+
+              <h1 className="mt-3 text-[16vw] leading-[0.84] font-light tracking-[-0.055em] sm:text-[8.5rem] lg:text-[10.5rem]">
+                <AnimatedHeadline text="SebX" delay={220} stagger={90} />
               </h1>
 
               <p
                 className="animate-rise mt-5 max-w-xl text-balance text-lg font-light leading-relaxed text-muted sm:text-xl"
                 style={{ animationDelay: "620ms" }}
               >
-                Cursor&rsquo;s upcoming AI dog. An artificial intelligence that steps off
-                the screen and into the room.
+                SpaceX, Cursor, and Neuralink are building a new kind of dog. Rocket-grade
+                engineering, AI at its core, and a neural link to its owner.
               </p>
 
               <p
@@ -94,10 +136,10 @@ export default function Page() {
             >
               <div className="animate-float mx-auto max-w-3xl">
                 <Image
-                  src={novaImage}
-                  alt="Nova, Cursor's upcoming AI dog — a white quadruped robot with NOVA printed on its body"
-                  width={847}
-                  height={845}
+                  src={sebxImage}
+                  alt="SebX, the Neuro Dog — a graphite-black robotic dog mid-stride with a glowing blue visor, blue light strips, a neural core on its neck, and SebX printed on its body"
+                  width={1024}
+                  height={1024}
                   priority
                   sizes="(max-width: 768px) 100vw, 768px"
                   className="h-auto w-full select-none"
@@ -109,7 +151,7 @@ export default function Page() {
               </div>
 
               <div className="mt-8 hidden justify-center gap-3 sm:flex">
-                {["Environmental awareness", "On-device personality", "Real-world presence"].map(
+                {["Rocket-grade body", "Cursor AI core", "Neural interface"].map(
                   (tag, index) => (
                     <span
                       key={tag}
@@ -127,24 +169,54 @@ export default function Page() {
 
         <Marquee />
 
-        {/* Meet Nova ---------------------------------------------------- */}
-        <section id="meet" className="px-6 py-24 sm:py-32">
+        {/* Collaboration ----------------------------------------------- */}
+        <section id="collaboration" className="px-6 py-24 sm:py-32">
+          <div className="mx-auto max-w-6xl">
+            <Reveal className="flex flex-col items-center text-center">
+              <span className="text-[12px] uppercase tracking-[0.2em] text-muted">
+                The collaboration
+              </span>
+              <h2 className="mt-6 text-4xl font-light tracking-[-0.03em] sm:text-6xl lg:text-7xl">
+                <PartnerLockup className="flex-wrap justify-center gap-y-2" />
+              </h2>
+              <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-balance text-muted">
+                Three companies, one dog. Each one brings the thing it does best, and
+                together they make SebX.
+              </p>
+            </Reveal>
+
+            <div className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:mt-20 md:grid-cols-3">
+              {COLLABORATION.map((item, index) => (
+                <Reveal key={item.partner} delay={index * 110} className="bg-white p-8 sm:p-10">
+                  <span className="text-[12px] uppercase tracking-[0.2em] text-muted">
+                    {item.role}
+                  </span>
+                  <h3 className="mt-6 text-3xl font-light tracking-[-0.02em]">{item.partner}</h3>
+                  <p className="mt-3 text-[15px] leading-relaxed text-muted">{item.body}</p>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Meet SebX --------------------------------------------------- */}
+        <section id="meet" className="border-t border-line px-6 py-24 sm:py-32">
           <div className="mx-auto max-w-6xl">
             <Reveal>
               <span className="text-[12px] uppercase tracking-[0.2em] text-muted">
-                Meet Nova
+                Meet SebX
               </span>
               <h2 className="mt-5 max-w-3xl text-4xl font-light leading-[1.1] tracking-[-0.03em] sm:text-5xl">
                 More than an ordinary robotic dog.
               </h2>
               <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-muted">
-                The idea behind Nova is an AI companion that feels alive, responsive, and
+                The idea behind SebX is an AI companion that feels alive, responsive, and
                 capable of evolving alongside its owner. With artificial intelligence at the
-                center of his design, Nova could communicate, recognise situations, respond to
-                people, and learn new behaviours.
+                center of his design and a neural link to the person he lives with, SebX could
+                communicate, recognise situations, respond to people, and learn new behaviours.
               </p>
               <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-muted">
-                His name is simple: Nova. The technology behind him is anything but.
+                His name is simple: SebX. The technology behind him is anything but.
               </p>
             </Reveal>
 
@@ -191,8 +263,8 @@ export default function Page() {
                   world.
                 </p>
                 <p className="mt-6 text-lg font-light leading-relaxed text-muted">
-                  If Nova delivers on that vision, he could become an important step toward that
-                  future.
+                  If SebX delivers on that vision, the Neuro Dog could become an important step
+                  toward that future.
                 </p>
 
                 <dl className="mt-12 grid grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-4">
@@ -218,7 +290,7 @@ export default function Page() {
                 A new era for AI companions
               </span>
               <p className="mt-8 text-3xl font-light leading-[1.25] tracking-[-0.025em] text-balance sm:text-4xl">
-                Nova could show how artificial intelligence moves beyond screens and becomes
+                SebX could show how artificial intelligence moves beyond screens and becomes
                 something people can physically experience.
               </p>
               <p className="mt-8 text-lg font-light leading-relaxed text-muted">
@@ -240,7 +312,7 @@ export default function Page() {
                 October 2026
               </h2>
               <p className="mt-6 max-w-lg text-lg font-light leading-relaxed text-balance text-muted">
-                Nova is coming. October 2026 could be the beginning of something new.
+                SebX is coming. October 2026 could be the beginning of something new.
               </p>
             </Reveal>
 
@@ -259,7 +331,7 @@ export default function Page() {
                 href="#meet"
                 className="rounded-full border border-line px-6 py-3 text-[14px] font-medium transition-colors duration-300 hover:border-ink"
               >
-                Learn about Nova
+                Learn about SebX
               </a>
             </Reveal>
           </div>
@@ -269,9 +341,9 @@ export default function Page() {
         <section className="px-6 pb-20">
           <Reveal className="mx-auto max-w-3xl rounded-2xl border border-line px-6 py-6 sm:px-8">
             <p className="text-[13.5px] leading-relaxed text-muted">
-              <span className="text-ink">Official:</span> Nova is an official Cursor product.
-              Full details on features, pricing, and availability will be announced through
-              Cursor&rsquo;s official channels ahead of the October 2026 release.
+              <span className="text-ink">Official:</span> SebX is a joint product of SpaceX,
+              Cursor, and Neuralink. Full details on features, pricing, and availability will be
+              announced through official channels ahead of the October 2026 release.
             </p>
           </Reveal>
         </section>
@@ -287,10 +359,12 @@ export default function Page() {
               height={64}
               className="h-6 w-6 rounded-md object-cover"
             />
-            <span className="text-[14px] text-muted">Cursor &middot; Nova</span>
+            <span className="text-[14px] text-muted">
+              SpaceX &times; Cursor &times; Neuralink &middot; SebX
+            </span>
           </div>
           <p className="text-[13px] text-muted">
-            &copy; {new Date().getFullYear()} Cursor &middot; Official Nova product page.
+            &copy; {new Date().getFullYear()} SebX &middot; The Neuro Dog.
           </p>
         </div>
       </footer>

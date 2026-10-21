@@ -1,4 +1,6 @@
 const ITEMS = [
+  "SpaceX × Cursor × Neuralink",
+  "The Neuro Dog",
   "Learns from experience",
   "Develops personality",
   "Reads the room",

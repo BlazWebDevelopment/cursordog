@@ -5,7 +5,8 @@ import { useEffect, useState } from "react";
 
 const NAV = [
   { label: "Overview", href: "#overview" },
-  { label: "Meet Nova", href: "#meet" },
+  { label: "Collaboration", href: "#collaboration" },
+  { label: "Meet SebX", href: "#meet" },
   { label: "Vision", href: "#vision" },
   { label: "Launch", href: "#launch" },
 ];
@@ -38,10 +39,13 @@ export default function Header() {
             priority
             className="h-7 w-7 rounded-md object-cover"
           />
-          <span className="text-[15px] font-medium tracking-tight">Cursor</span>
+          <span className="text-[15px] font-medium tracking-tight">SebX</span>
           <span className="hidden text-[15px] text-muted sm:inline">/</span>
-          <span className="hidden text-[15px] text-muted transition-colors group-hover:text-ink sm:inline">
-            Nova
+          <span className="hidden text-[13.5px] text-muted transition-colors group-hover:text-ink lg:inline">
+            SpaceX &times; Cursor &times; Neuralink
+          </span>
+          <span className="hidden text-[15px] text-muted transition-colors group-hover:text-ink sm:inline lg:hidden">
+            Neuro Dog
           </span>
         </a>
 

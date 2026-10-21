@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import novaImage from "@/assets/nova.png";
+import sebxImage from "@/assets/sebx.jpg";
 import "./globals.css";
 
 const inter = Inter({
@@ -10,13 +10,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nova.cursor.com"),
-  title: "Nova — Cursor's Upcoming AI Dog",
+  metadataBase: new URL("https://sebx.cursor.com"),
+  title: "SebX — The Neuro Dog by SpaceX × Cursor × Neuralink",
   description:
-    "Nova is an official Cursor product, arriving October 2026. An AI companion that interacts with its environment, learns from experience, and develops its own personality.",
+    "SebX is the Neuro Dog, built by SpaceX, Cursor, and Neuralink, arriving October 2026. An AI companion with a rocket-grade body, an AI core, and a neural link to its owner.",
   keywords: [
-    "Nova",
+    "SebX",
+    "Neuro Dog",
+    "SpaceX",
     "Cursor",
+    "Neuralink",
     "AI dog",
     "AI companion",
     "robotics",
@@ -24,18 +27,18 @@ export const metadata: Metadata = {
     "October 2026",
   ],
   openGraph: {
-    title: "Nova — Cursor's Upcoming AI Dog",
+    title: "SebX — The Neuro Dog by SpaceX × Cursor × Neuralink",
     description:
       "An AI companion that learns, adapts, and evolves. Coming October 2026.",
     type: "website",
-    images: [novaImage.src],
+    images: [sebxImage.src],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nova — Cursor's Upcoming AI Dog",
+    title: "SebX — The Neuro Dog by SpaceX × Cursor × Neuralink",
     description:
       "An AI companion that learns, adapts, and evolves. Coming October 2026.",
-    images: [novaImage.src],
+    images: [sebxImage.src],
   },
 };
 
