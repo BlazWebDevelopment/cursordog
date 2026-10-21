@@ -65,7 +65,7 @@ export default function Header() {
           href="#launch"
           className="rounded-full bg-ink px-4 py-2 text-[13.5px] font-medium text-white transition-all duration-300 hover:opacity-80 active:scale-[0.97]"
         >
-          October 2026
+          Q1 2027
         </a>
       </div>
     </header>

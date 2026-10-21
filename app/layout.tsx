@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sebx.cursor.com"),
   title: "SebX — The Neuro Dog by SpaceX × Cursor × Neuralink",
   description:
-    "SebX is the Neuro Dog, built by SpaceX, Cursor, and Neuralink, arriving October 2026. An AI companion with a rocket-grade body, an AI core, and a neural link to its owner.",
+    "SebX is the Neuro Dog, built by SpaceX, Cursor, and Neuralink, arriving Q1 2027. An AI companion with a rocket-grade body, an AI core, and a neural link to its owner.",
   keywords: [
     "SebX",
     "Neuro Dog",
@@ -24,12 +24,12 @@ export const metadata: Metadata = {
     "AI companion",
     "robotics",
     "artificial intelligence",
-    "October 2026",
+    "Q1 2027",
   ],
   openGraph: {
     title: "SebX — The Neuro Dog by SpaceX × Cursor × Neuralink",
     description:
-      "An AI companion that learns, adapts, and evolves. Coming October 2026.",
+      "An AI companion that learns, adapts, and evolves. Coming Q1 2027.",
     type: "website",
     images: [sebxImage.src],
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SebX — The Neuro Dog by SpaceX × Cursor × Neuralink",
     description:
-      "An AI companion that learns, adapts, and evolves. Coming October 2026.",
+      "An AI companion that learns, adapts, and evolves. Coming Q1 2027.",
     images: [sebxImage.src],
   },
 };

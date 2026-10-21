@@ -49,7 +49,7 @@ const SPECS = [
   { label: "Name", value: "SebX" },
   { label: "Category", value: "Neuro Dog" },
   { label: "Built by", value: "SpaceX × Cursor × Neuralink" },
-  { label: "Arriving", value: "October 2026" },
+  { label: "Arriving", value: "Q1 2027" },
 ];
 
 function PartnerLockup({ className = "" }: { className?: string }) {
@@ -309,10 +309,10 @@ export default function Page() {
                 Launch window
               </span>
               <h2 className="mt-5 text-5xl font-light tracking-[-0.04em] sm:text-7xl">
-                October 2026
+                Q1 2027
               </h2>
               <p className="mt-6 max-w-lg text-lg font-light leading-relaxed text-balance text-muted">
-                SebX is coming. October 2026 could be the beginning of something new.
+                SebX is coming. Q1 2027 could be the beginning of something new.
               </p>
             </Reveal>
 
@@ -343,7 +343,7 @@ export default function Page() {
             <p className="text-[13.5px] leading-relaxed text-muted">
               <span className="text-ink">Official:</span> SebX is a joint product of SpaceX,
               Cursor, and Neuralink. Full details on features, pricing, and availability will be
-              announced through official channels ahead of the October 2026 release.
+              announced through official channels ahead of the Q1 2027 release.
             </p>
           </Reveal>
         </section>

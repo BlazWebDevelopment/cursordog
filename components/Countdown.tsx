@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const TARGET = new Date("2026-10-01T00:00:00Z").getTime();
+const TARGET = new Date("2027-01-01T00:00:00Z").getTime();
 
 function split(distance: number) {
   const clamped = Math.max(distance, 0);
